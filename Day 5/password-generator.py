@@ -25,28 +25,17 @@ for char in range(1, nr_symbols + 1):
 for char in range(1, nr_numbers + 1):
   randnumber = random.choice(numbers)
   password += randnumber
-print(password)
+print(f"Your password is: \n{password}")
 
 #Hard Level - Order of characters randomised:
 #This part has connection with easy level part
-password_2 = ""
-password_list = list(password) #converts the string into list
-
-for char in range(1, len(password_list)): #chooses the element in random order 
-    randelement = random.choice(password_list)
-    password_2 += randelement 
-
-print(password_2)
-#this method is not recommendable because of repeating the same elemet in the list
-
-
-
 password_3 = ""
+password_list = list(password) #converts the string into list
 random.shuffle(password_list)
 
 for char in password_list:
     password_3 += char
 
-print(password_3)
+print(f"But I recommend you this password:\n{password_3}\nHope you'll get why I recommended this pass!")
 
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
