@@ -28,6 +28,7 @@ for char in range(1, nr_numbers + 1):
 print(f"Your password is: \n{password}")
 
 #Hard Level - Order of characters randomised:
+#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 #This part has connection with easy level part
 password_3 = ""
 password_list = list(password) #converts the string into list
@@ -38,4 +39,3 @@ for char in password_list:
 
 print(f"But I recommend you this password:\n{password_3}\nHope you'll get why I recommended this pass!")
 
-#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
