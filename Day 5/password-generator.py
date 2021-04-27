@@ -31,4 +31,14 @@ print(password)
 
 
 #Hard Level - Order of characters randomised:
+
+password2 = ""
+elements_pass = list(password)
+
+for char in range(1, len(elements_pass)):
+    randelement = random.choice(elements_pass)
+    password2+=randelement
+
+print(password2)
+
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
