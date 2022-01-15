@@ -10,6 +10,11 @@ def hangman(chosen_word):
 
     tries = 6
 
+    print("You have overall 6 tries to find the all letters of the word.")
+    print(" ".join((display)))
+    
+    
+
     endofgame = False
 
     while not endofgame:
@@ -34,6 +39,9 @@ def hangman(chosen_word):
         if "_" not in display:
             print("You have found all letters. You won!!!")
             endofgame = True
+        else:
+            print("You have typed invalid character(s)")
+
 
 random_word = random.choice(word_list)
 
