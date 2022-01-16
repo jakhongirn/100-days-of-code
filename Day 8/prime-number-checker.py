@@ -1,12 +1,11 @@
-#Write your code below this line 👇
-import math
+#Write your code below this line 
 def prime_checker(number):
 
   try:
     number = float(number)
 
     if number == int(number):
-      number = math.trunc(number)
+      number = int(number)
       if number > 1:
         for i in range(2, number):
           if number % i == 0:
